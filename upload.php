@@ -1,0 +1,15 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Upload Photo</title>
+</head>
+<body>
+<h2>Upload Photo</h2>
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="photo" required>
+    <button type="submit">Upload</button>
+</form>
+</body>
+</html>

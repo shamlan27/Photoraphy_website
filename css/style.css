@@ -1,0 +1,279 @@
+/* css/style.css - simple modern responsive styles */
+:root{
+  --accent:#1f6feb;
+  --muted:#6b7280;
+  --bg:#f7f7fb;
+  --card:#ffffff;
+}
+*{box-sizing:border-box}
+body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; margin:0; color:#111; background:var(--bg); line-height:1.5}
+.container{max-width:1080px;margin:0 auto;padding:1rem}
+.site-header{background:var(--card);box-shadow:0 2px 6px rgba(0,0,0,.06);position:sticky;top:0;z-index:20}
+.site-header .container{display:flex;align-items:center;gap:1rem}
+.logo a{font-weight:700;color:var(--accent);text-decoration:none}
+.main-nav{margin-left:auto;display:flex;gap:.75rem}
+.main-nav a{padding:.6rem .75rem;border-radius:.375rem;text-decoration:none;color:var(--muted)}
+.main-nav.open{display:block}
+.nav-toggle{display:none;background:transparent;border:none;font-size:1.3rem}
+.hero{background-image:linear-gradient(rgba(0,0,0,.25),rgba(0,0,0,.25)), url('css/hero.jpg');background-size:cover;background-position:center;color:#fff;padding:4rem 0}
+.hero-inner{padding:4rem 1rem;text-align:center}
+.hero h1{font-size:2.2rem;margin:0 0 .4rem}
+.lead{opacity:.95;margin-bottom:1rem}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:.6rem .9rem;border-radius:.5rem;text-decoration:none;border:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--accent);border:1px solid rgba(0,0,0,.06)}
+.preview h2{margin-top:1rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:1rem;margin:1rem 0}
+.card{background:var(--card);padding:.5rem;border-radius:.5rem;box-shadow:0 1px 3px rgba(0,0,0,.04);overflow:hidden}
+.card img{width:100%;display:block;border-radius:.35rem}
+.card h3{margin:.5rem 0 0;font-size:1rem}
+.card .meta{display:flex;justify-content:space-between;color:var(--muted);font-size:.9rem}
+main .container{padding-top:1.5rem;padding-bottom:3rem}
+form label{display:block;margin:.6rem 0}
+input,textarea,select{width:100%;padding:.6rem;border:1px solid #e6e6f2;border-radius:.4rem}
+.alert{padding:.6rem 1rem;background:#fffbeb;border-left:4px solid #f59e0b}
+.alert.success{background:#ecfdf5;border-left-color:#10b981}
+.hidden{display:none}
+footer.site-footer{padding:1.5rem 0;text-align:center;color:var(--muted)}
+.admin-nav{margin:1rem 0;display:flex;gap:.5rem}
+.cards{display:flex;gap:1rem}
+.card{padding:1rem}
+.enquiry{background:var(--card);padding:1rem;margin-bottom:.75rem;border-radius:.5rem}
+@media(max-width:700px){
+  .nav-toggle{display:block}
+  .main-nav{display:none;position:absolute;right:1rem;top:60px;background:var(--card);padding:1rem;border-radius:.5rem;box-shadow:0 6px 18px rgba(0,0,0,.08)}
+  .cards{flex-direction:column}
+  .hero{padding:3rem 0}
+}
+.container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.about-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.profile-img {
+  width: 300px;
+  border-radius: 8px;
+}
+
+.about-text {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-text p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.intro {
+  text-align: center;
+  font-size: 1.1em;
+  margin-bottom: 30px;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.pricing-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: scale(1.03);
+}
+
+.pricing-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.pricing-card h2 {
+  margin: 15px;
+  font-size: 1.4em;
+  color: #333;
+}
+
+.pricing-card p {
+  margin: 0 15px 10px;
+  color: #555;
+}
+
+.pricing-card ul {
+  margin: 0 15px 20px;
+  padding-left: 20px;
+  color: #444;
+}
+
+
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #0066cc;
+  color: #fff;
+  text-decoration: none;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #004999;
+}
+
+.featured {
+  text-align: center;
+  margin: 40px auto;
+  max-width: 800px;
+  overflow: hidden;
+}
+
+.featured h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.slideshow-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.slides-wrapper {
+  display: flex;
+  transition: transform 0.6s ease-in-out;
+}
+
+.card {
+  min-width: 220px;
+  margin: 0 10px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 12px;
+}
+
+.card-body h3 {
+  font-size: 16px;
+  margin: 0;
+  color: #333;
+}
+
+/* Navbar container */
+.navbar {
+  background: #222;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* Remove bullet points */
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: inline-flex;
+  gap: 20px;
+}
+
+/* Default link style */
+.navbar a {
+  text-decoration: none;
+  color: #f1f1f1;
+  font-weight: 500;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Hover effect */
+.navbar a:hover {
+  background: #f1f1f1;
+  color: #222;
+}
+
+/* Active (clicked/current page) */
+.navbar a.active {
+  background: #ff6600; /* orange highlight */
+  color: #fff;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+}
+
+.modal-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  text-align: center;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+.modal-box h2 {
+  margin-bottom: 10px;
+  color: #28a745;
+}
+
+.modal-box p {
+  margin-bottom: 20px;
+  font-size: 1.1em;
+}
+
+.modal-box .btn {
+  padding: 10px 20px;
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
