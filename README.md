@@ -35,4 +35,3 @@ Files to review:
 - css/style.css, js/enquiry.js, js/lightbox.js
 - db_schema.sql (MySQL), mssql_schema.sql (SQL Server)
 
-Download (zipped): malcolm_site.zip
